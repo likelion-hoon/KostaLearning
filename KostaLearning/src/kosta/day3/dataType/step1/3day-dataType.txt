@@ -1,0 +1,166 @@
+** 3일차 수업 목차 ** 
+
+- review
+- this keyword
+- 생성자(constructor) 
+- java Data type : primitive data type 과 reference data type 
+- 연산자
+- 제어문 : 조건문 / 반복문 
+
+---------------------------------------
+
+- review
+	2일차 주요 키워드 : jdk, jvm, compile, runtime 
+	eclipse, Object, Object-Oriented, OOAD, UML, Class, 
+	attribute, variable, method, operation, int, String, new 
+	Encapsulation
+
+- class 기본 문법 
+	// package 선언부
+	package review.step1
+
+// class 선언부 
+public class Account {
+	// instanciate(실재화)
+	// 객체의 속성 : instance(실재) variable(or Object Member Variable)
+	private String name; (힙 영역에 저장)
+	// 객체의 기능 : method
+	// int money : 매개변수, parameter / local variable
+	public void deposit(int money) { (스택 영역에 저장) 
+		
+	} 
+	
+	// private instance variable에 대한 간접 접근을 위해
+	// getter와 setter를 만들 수 있다. 
+	// getter method : 정보를 반환받고자 할 때 호출 
+	public String getName() {
+		return name; 
+	}
+	
+	// setter method : 정보를 다시 할당할 때 호출
+	// this는 현재 instance(객체)를 가르키는 키워드 
+	// this.name을 명시하여 instance 변수임을 알려준다. 
+	public void setName(String name) {
+		this.name = name; // n정보를 instance variable name에 대입
+	}
+	
+	- this Keyword
+	: 현재 객체를 가르키는 자바 예약어 
+		주로 지역변수와 인스턴스 변수명이 중복될 때
+		인스턴스 변수를 가르키기 위해 사용된다. 
+		
+ 	import : 다른 패키지의 자원을 사용할 때 명시 
+ 	ex) import step1.model.SmartPhone; 
+ 		// 위 표현은 step1.model 패키지의 SmartPhone 클래스를 사용하겠다는 뜻
+ 		
+ 		
+ 	- 생성자(contructor)
+ 	: 객체 생성시 호출되어 실행되는 클래스 구성요소 
+ 	: 객체 생성시 조건을 부여 할 수 있다. 
+ 	
+ 	특징 - 클래스명과 동일해야 한다. 
+ 		   클래스 내에서 생성자를 명시하지 않으면 
+ 		   컴파일시에 기본 생성자가 자동삽입된다. 
+ 		   
+ 		   생성자를 명시하는 주된 목적은
+ 		   객체 생성시 필요한 정보를 전달받기 위해서다. 
+ 		   
+   - 클래스 구성 요소
+   
+    package
+    
+    import
+    
+    class
+    
+    instance variable
+    
+    Constructor
+    
+    method 
+    
+    
+Java의 data type
+
+1) primitive data type
+	기본형 데이터 타입에는 정수형, 실수형, 문자형, 논리형으로 구성된다.
+
+		    1byte   2byte   4byte    8byte
+		    
+	정수형  byte    short   int      long
+	실수형                  float    double
+	문자형          char 
+	논리형  boolean 
+	
+	
+	정수형의 기본데이터 타입은 int
+	실수형의 기본데이터 타입은 double 
+	
+
+2) reference data type 
+	참조형 데이터 타입 - 객체의 타입을 말한다(클래스 명)
+	참조형 데이터 타입(reference data type)이란
+	객체를 참조하는 변수의 타입을 말한다.
+	
+	Car c; // 기본형이 아니므로 참조형 데이터타입이다. 
+	
+	Person p = new Person(); 
+	위 코드의 p변수 앞의 Person을 참조형 데이터 타입이라고 한다. 
+	
+** 객체 초기화 단계 ** 
+	RegDate date = new RegDate(2018,7,11); 
+	
+	1. 인스턴스 변수의 기본 초기화
+		정수형은 0, 참조형은 null, 논리형은 false로 초기화 
+	2. 인스턴스 변수의 명시적 초기화 
+		인스턴스 변수가 private int day = 1; 과 같이 
+		데이터를 초기화하면 메모리에 할당된다. 
+	3. 생성자에 의한 초기화 
+	
+	
+** java memory 영역 ** 
+ stack 영역 : local variable이 저장되는 영역 
+ 			선입후출(FILO : First in Last Out)
+ heap 영역 : 객체의 속성 정보가 저장되는 영역
+ 				
+
+-- 4일차 수업 목차 --
+
+	- 연산자 
+	- 제어문 : 
+		조건문 : if, switch =>  if문 중심으로 예습
+		반복문 : for, while, do while => for문 중심으로 예습
+	
+	- 변수 범위(Variable scope)
+	- 객체 관계(use a, has a relationship) 
+
+
+	
+	
+	
+	
+ 		   
+ 		   
+ 		   
+ 		   
+ 		   
+ 		   
+ 		   
+ 		   
+ 		   
+ 		   
+ 		   
+ 		   
+ 		   
+ 		   
+ 		   
+ 		   
+ 		   
+ 		   
+ 		
+ 		
+ 		
+	
+	
+	
+}
