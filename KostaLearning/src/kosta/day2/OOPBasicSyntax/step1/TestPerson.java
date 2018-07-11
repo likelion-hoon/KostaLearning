@@ -8,11 +8,11 @@ package kosta.day2.OOPBasicSyntax.step1;
  */
 
 public class TestPerson {
-	
- 	/*
-	 * 메인 메서드 : 프로그램의 시작점(Entry Point)
-	 * 실행을 위해서 반드시 필요하다 
-	 */
+
+ /*	
+ * 메인 메서드 : 프로그램의 시작점(Entry Point)
+ * 실행을 위해서 반드시 필요하다 
+ */
 	public static void main(String[] args) {
 		// Person class를 이용해 객체object를 생성
 		/*
