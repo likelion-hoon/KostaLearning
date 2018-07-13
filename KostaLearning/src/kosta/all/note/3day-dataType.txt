@@ -83,6 +83,7 @@ public class Account {
 Java의 data type
 
 1) primitive data type
+
 	기본형 데이터 타입에는 정수형, 실수형, 문자형, 논리형으로 구성된다.
 
 		    1byte   2byte   4byte    8byte
@@ -98,6 +99,7 @@ Java의 data type
 	
 
 2) reference data type 
+
 	참조형 데이터 타입 - 객체의 타입을 말한다(클래스 명)
 	참조형 데이터 타입(reference data type)이란
 	객체를 참조하는 변수의 타입을 말한다.
@@ -119,20 +121,16 @@ Java의 data type
 	
 	
 ** java memory 영역 ** 
+
  stack 영역 : local variable이 저장되는 영역 
  			선입후출(FILO : First in Last Out)
  heap 영역 : 객체의 속성 정보가 저장되는 영역
+ 
+ instance : 메모리 상의 객체 
+ 
+ 기본 생성자 : 컴파일 할때 자동으로 들어간다. ( 매개변수 생성자가 없을시 ) 
  				
 
--- 4일차 수업 목차 --
-
-	- 연산자 
-	- 제어문 : 
-		조건문 : if, switch =>  if문 중심으로 예습
-		반복문 : for, while, do while => for문 중심으로 예습
-	
-	- 변수 범위(Variable scope)
-	- 객체 관계(use a, has a relationship) 
 
 
 	
